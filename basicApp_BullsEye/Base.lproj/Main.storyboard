@@ -177,13 +177,20 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFD-U7-BdW">
                                                         <rect key="frame" x="500.5" y="0.0" width="166.5" height="93.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdy-E5-gfJ">
-                                                                <rect key="frame" x="68" y="32" width="30" height="30"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" title="i"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdy-E5-gfJ">
+                                                                <rect key="frame" x="68" y="30" width="30" height="33"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <state key="normal" title="(i)"/>
+                                                                <connections>
+                                                                    <segue destination="bNy-9i-jp6" kind="presentation" id="LEa-q6-bt7"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Bdy-E5-gfJ" firstAttribute="centerY" secondItem="UFD-U7-BdW" secondAttribute="centerY" id="DDF-nb-AwL"/>
+                                                            <constraint firstItem="Bdy-E5-gfJ" firstAttribute="centerX" secondItem="UFD-U7-BdW" secondAttribute="centerX" id="MaC-Ap-yrK"/>
+                                                        </constraints>
                                                     </view>
                                                 </subviews>
                                             </stackView>
@@ -217,7 +224,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-501" y="-652"/>
+            <point key="canvasLocation" x="-897" y="-793"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="0PF-t1-xxm">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="bNy-9i-jp6" customClass="AboutViewController" customModule="basicApp_BullsEye" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HqV-Z0-bdf">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IUO-vN-Xj0">
+                                <rect key="frame" x="172" y="-12" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="bottom" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bny-Qi-heo">
+                                <rect key="frame" x="306" y="314" width="55" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="close"/>
+                                <connections>
+                                    <action selector="closeView:" destination="bNy-9i-jp6" eventType="touchDown" id="bgd-bd-ODY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bny-Qi-heo" firstAttribute="centerX" secondItem="HqV-Z0-bdf" secondAttribute="centerX" id="DCQ-NU-hWE"/>
+                            <constraint firstItem="0mJ-Py-Cnr" firstAttribute="bottom" secondItem="bny-Qi-heo" secondAttribute="bottom" constant="20" id="KhN-5R-ZN2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0mJ-Py-Cnr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YD4-BK-m3y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-475" y="-894"/>
         </scene>
     </scenes>
 </document>
