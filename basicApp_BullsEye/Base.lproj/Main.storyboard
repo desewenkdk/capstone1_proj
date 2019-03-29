@@ -56,6 +56,9 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="f8J-d2-dqe"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="7Hp-3a-BkX"/>
+                                                </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trO-S7-xJ2">
                                                 <rect key="frame" x="441.5" y="36.5" width="28.5" height="20.5"/>
@@ -88,7 +91,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <state key="normal" title="Hit Me!"/>
                                                 <connections>
-                                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w5V-lU-dLz"/>
+                                                    <action selector="hitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FSk-fx-6AH"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -110,6 +113,9 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCs-Eq-AFk">
                                                                 <rect key="frame" x="48" y="31.5" width="71" height="30"/>
                                                                 <state key="normal" title="Start Over"/>
+                                                                <connections>
+                                                                    <action selector="startNewGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="bWT-JV-pBJ"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -202,10 +208,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="roundLabel" destination="dBE-bd-1i6" id="e2G-YK-vT1"/>
+                        <outlet property="scoreLabel" destination="taO-4Y-sFf" id="s8F-Ti-OH1"/>
+                        <outlet property="slider" destination="dUR-nD-6GG" id="35s-WR-L91"/>
+                        <outlet property="targetLabel" destination="ikM-iW-QrD" id="Tft-ou-xFg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-143.47826086956522" y="-252"/>
+            <point key="canvasLocation" x="-501" y="-652"/>
         </scene>
     </scenes>
 </document>
