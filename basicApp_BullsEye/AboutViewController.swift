@@ -7,18 +7,24 @@
 //
 
 import UIKit
-
+import WebKit
 class AboutViewController: UIViewController {
-
+    @IBOutlet weak var webView: WKWebView!
+    @IBAction func closeView(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if let url = Bundle.main.url(forResource:"BullsEye", withExtension: "html"){
+            
+            let request = URLRequest(url : url)
+            webView.load(request);
+        }
     }
     
-    @IBAction func closeView(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
-    }
+
     
     /*
     // MARK: - Navigation

@@ -16,6 +16,7 @@
 		6095E6EF2249E46300B6F5CB /* basicApp_BullsEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6095E6EE2249E46300B6F5CB /* basicApp_BullsEyeUITests.swift */; };
 		6095E6FD224E53FE00B6F5CB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6095E6FC224E53FE00B6F5CB /* AboutViewController.swift */; };
 		6095E700224E595400B6F5CB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6095E6FF224E595400B6F5CB /* WebKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		60F7D1542250D830006DDFC3 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 60F7D1532250D82F006DDFC3 /* BullsEye.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		6095E6F02249E46300B6F5CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6095E6FC224E53FE00B6F5CB /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		6095E6FF224E595400B6F5CB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		60F7D1532250D82F006DDFC3 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +84,6 @@
 		6095E6C22249E46100B6F5CB = {
 			isa = PBXGroup;
 			children = (
-				6095E6FC224E53FE00B6F5CB /* AboutViewController.swift */,
 				6095E6CD2249E46100B6F5CB /* basicApp_BullsEye */,
 				6095E6E22249E46300B6F5CB /* basicApp_BullsEyeTests */,
 				6095E6ED2249E46300B6F5CB /* basicApp_BullsEyeUITests */,
@@ -104,6 +105,8 @@
 		6095E6CD2249E46100B6F5CB /* basicApp_BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				60F7D1532250D82F006DDFC3 /* BullsEye.html */,
+				6095E6FC224E53FE00B6F5CB /* AboutViewController.swift */,
 				6095E6CE2249E46100B6F5CB /* AppDelegate.swift */,
 				6095E6D02249E46100B6F5CB /* ViewController.swift */,
 				6095E6D22249E46100B6F5CB /* Main.storyboard */,
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6095E6D92249E46300B6F5CB /* LaunchScreen.storyboard in Resources */,
+				60F7D1542250D830006DDFC3 /* BullsEye.html in Resources */,
 				6095E6D62249E46300B6F5CB /* Assets.xcassets in Resources */,
 				6095E6D42249E46100B6F5CB /* Main.storyboard in Resources */,
 			);

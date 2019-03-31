@@ -234,9 +234,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IUO-vN-Xj0">
-                                <rect key="frame" x="172" y="-12" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IUO-vN-Xj0">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="306"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -255,14 +254,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bny-Qi-heo" firstAttribute="centerX" secondItem="HqV-Z0-bdf" secondAttribute="centerX" id="DCQ-NU-hWE"/>
+                            <constraint firstItem="bny-Qi-heo" firstAttribute="top" secondItem="IUO-vN-Xj0" secondAttribute="bottom" constant="8" id="FVK-5C-z67"/>
                             <constraint firstItem="0mJ-Py-Cnr" firstAttribute="bottom" secondItem="bny-Qi-heo" secondAttribute="bottom" constant="20" id="KhN-5R-ZN2"/>
+                            <constraint firstItem="IUO-vN-Xj0" firstAttribute="leading" secondItem="0mJ-Py-Cnr" secondAttribute="leading" id="YSw-xB-Rzx"/>
+                            <constraint firstItem="IUO-vN-Xj0" firstAttribute="top" secondItem="HqV-Z0-bdf" secondAttribute="top" id="c2F-i2-c4y"/>
+                            <constraint firstItem="0mJ-Py-Cnr" firstAttribute="trailing" secondItem="IUO-vN-Xj0" secondAttribute="trailing" id="mQM-Aa-lHY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0mJ-Py-Cnr"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="IUO-vN-Xj0" id="hu5-1G-KCJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YD4-BK-m3y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-475" y="-894"/>
+            <point key="canvasLocation" x="-793" y="-993"/>
         </scene>
     </scenes>
 </document>
